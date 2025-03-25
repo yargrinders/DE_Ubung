@@ -59,7 +59,7 @@ img {
     font-family: Arial, sans-serif; /* Шрифт */
     font-size: 16px; /* Размер шрифта */
     font-weight: bold; /* Жирный текст */
-    padding: 12px 24px; /* Внутренние отступы */
+    padding: 5px 10px;; /* Внутренние отступы */
     border: none; /* Без границ */
     border-radius: 8px; /* Закругленные углы */
     background-color: #007BFF; /* Синий фон */

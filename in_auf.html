@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Präpositionen "В" und "НА" im Russischen - Test</title>
+    <link rel="stylesheet" href="css/in_styles.css">
+</head>
+<body>
+    <div class="buttons">
+        <a href="index.html" class="button">Übung</a>
+        <a href="in_auf.html" class="button">IN / Auf</a>
+        <a href="info.html" class="button">Informationen</a>
+    </div>
+    <div class="container">
+        <h2 class="rule-heading">Die Präpositionen „В“ (In) und „НА“ (Auf)</h2>
+        <p class="rule-description">
+            Die Präpositionen „В“ (In) und „НА“ (Auf) werden verwendet, um die Richtung einer Bewegung zu bezeichnen, wenn die Frage den Zielort einer Person oder eines Objekts betrifft.
+        </p>
+        <p class="rule-details">
+            <strong>В (In):</strong> Wird verwendet, wenn es um die Bewegung in einen geschlossenen Raum, ein Gebäude oder einen Behälter geht (zum Beispiel in ein Zimmer, in einen Bus, in eine Kiste).
+        </p>
+        <p class="rule-details">
+            <strong>НА (Auf):</strong> Wird verwendet, wenn es um die Bewegung auf eine Oberfläche oder in einen offenen Raum geht (zum Beispiel auf den Tisch, auf die Straße, auf das Dach).
+        </p>
+    </div>
+
+    <h1>Wählen Sie den richtigen Präposition: "В" oder "НА"</h1>
+
+    <div class="container" id="content"></div>
+
+    <button id="checkBtn" class="button" disabled>Prüfen</button>
+    <p id="result" style="text-align: center;"></p>
+
+    <script>
+        const questions = [
+            { question: '... den **Raum**', correctAnswer: 'В' },
+            { question: '... den **Bus**', correctAnswer: 'В' },
+            { question: '... den **Schrank**', correctAnswer: 'В' },
+            { question: '... die **Kiste**', correctAnswer: 'В' },
+            { question: '... die **Tasche**', correctAnswer: 'В' },
+            { question: '... den **Kühlschrank**', correctAnswer: 'В' },
+            { question: '... das **Kino**', correctAnswer: 'В' },
+            { question: '... den **Laden**', correctAnswer: 'В' },
+            { question: '... die **Bibliothek**', correctAnswer: 'В' },
+            { question: '... den **Tisch**', correctAnswer: 'НА' },
+            { question: '... die **Straße**', correctAnswer: 'НА' },
+            { question: '... das **Dach**', correctAnswer: 'НА' },
+            { question: '... die **Arbeit**', correctAnswer: 'НА' },
+            { question: '... den **Platz**', correctAnswer: 'НА' },
+            { question: '... die **Küche**', correctAnswer: 'НА' },
+            { question: '... die **Bushaltestelle**', correctAnswer: 'НА' },
+            { question: '... den **Balkon**', correctAnswer: 'НА' },
+            { question: '... den **Strand**', correctAnswer: 'НА' },
+            { question: '... das **Stadion**', correctAnswer: 'НА' }
+        ];
+
+        function shuffleQuestions(questions) {
+            return questions.sort(() => Math.random() - 0.5).slice(0, 10);  // Отображаем только 10 случайных вопросов
+        }
+
+        async function loadData() {
+            try {
+                const shuffledQuestions = shuffleQuestions(questions);
+                const container = document.getElementById('content');
+                container.innerHTML = '';
+
+                shuffledQuestions.forEach((item, index) => {
+                    const questionDiv = document.createElement('div');
+                    questionDiv.classList.add('question');
+                    const questionText = `<p><strong>Frage ${index + 1}:</strong> ${item.question}</p>`;
+
+                    const selectElement = `<select class="answer-select" data-index="${index}">
+                        <option value="" disabled selected>Wählen Sie eine Antwort</option>
+                        <option value="В">В / In</option>
+                        <option value="НА">НА / Auf</option>
+                    </select>`;
+
+                    questionDiv.innerHTML = questionText + selectElement;
+                    container.appendChild(questionDiv);
+                });
+
+                document.getElementById('checkBtn').disabled = false;
+            } catch (error) {
+                console.error('Fehler beim Laden der Daten:', error);
+            }
+        }
+
+        function checkAnswers() {
+            const answers = document.querySelectorAll('.answer-select');
+            let allSelected = true;
+
+            answers.forEach((select) => {
+                const selectedAnswer = select.value;
+                const questionIndex = select.getAttribute('data-index');
+                const correctAnswer = questions[questionIndex].correctAnswer;
+
+                if (selectedAnswer === '') {
+                    allSelected = false;
+                    return;
+                }
+            });
+
+            if (!allSelected) {
+                alert("Bitte wählen Sie für alle Fragen eine Antwort aus.");
+                return;
+            }
+
+            // Преобразуем коллекцию в массив
+            const answersArray = Array.from(answers);
+
+            // Проверяем правильность ответов
+            answersArray.forEach((select) => {
+                const selectedAnswer = select.value;
+                const questionIndex = select.getAttribute('data-index');
+                const correctAnswer = questions[questionIndex].correctAnswer;
+
+                const questionDiv = select.closest('.question');
+
+                if (selectedAnswer === correctAnswer) {
+                    questionDiv.style.backgroundColor = 'lightgreen';
+                } else {
+                    questionDiv.style.backgroundColor = 'lightcoral';
+                }
+            });
+
+            // Подсчитываем количество правильных ответов
+            const correctAnswersCount = answersArray.filter(select => select.value === questions[select.getAttribute('data-index')].correctAnswer).length;
+
+            const resultText = `Richtige Antworten: ${correctAnswersCount} / 10`;
+            document.getElementById('result').innerText = resultText;
+        }
+
+        window.onload = loadData;
+        document.getElementById('checkBtn').addEventListener('click', checkAnswers);
+    </script>
+</body>
+</html>
