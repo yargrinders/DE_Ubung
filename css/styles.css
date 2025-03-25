@@ -5,43 +5,41 @@ body {
     margin: 0;
     padding: 20px;
 }
-
+h1 {
+    color: #4CAF50;
+}
 /* Общий стиль для контейнера */
-.link {
+.buttons {
     display: flex;
     justify-content: center; /* Центрирование по горизонтали */
-    background-color: #f4f4f4; /* Светлый фон */
-    padding: 10px 0; /* Отступы сверху и снизу */
+    gap: 20px; /* Расстояние между кнопками */
+    padding: 20px 0; /* Отступы сверху и снизу */
 }
 
-/* Стиль для списка */
-.link ul {
-    display: flex; /* Расположение элементов по горизонтали */
-    list-style: none; /* Убираем маркеры списка */
-    margin: 0;
-    padding: 0;
-}
-
-/* Стиль для каждого пункта списка */
-.link li {
-    margin: 0 15px; /* Отступы между ссылками */
-}
-
-/* Стиль для ссылок */
-.link a {
+/* Стиль для кнопок */
+.button {
     text-decoration: none; /* Убираем подчеркивание */
-    color: #333; /* Темный цвет текста */
+    color: white; /* Белый текст */
     font-family: Arial, sans-serif; /* Шрифт */
     font-size: 16px; /* Размер шрифта */
-    padding: 8px 12px; /* Внутренние отступы */
-    border-radius: 5px; /* Закругленные углы */
-    transition: background-color 0.3s, color 0.3s; /* Плавный переход */
+    font-weight: bold; /* Жирный текст */
+    padding: 12px 24px; /* Внутренние отступы */
+    border: none; /* Без границ */
+    border-radius: 8px; /* Закругленные углы */
+    background-color: #007BFF; /* Синий фон */
+    cursor: pointer; /* Курсор "рука" */
+    transition: all 0.3s ease; /* Плавный переход */
 }
 
 /* Эффект при наведении */
-.link a:hover {
-    background-color: #007BFF; /* Синий фон при наведении */
-    color: white; /* Белый текст */
+.button:hover {
+    background-color: #0056b3; /* Темно-синий фон */
+    transform: scale(1.05); /* Небольшое увеличение */
+}
+
+/* Активная кнопка (если нужно) */
+.button.active {
+    background-color: #0056b3; /* Темно-синий фон */
 }
 #quiz-container {
     max-width: 600px;
