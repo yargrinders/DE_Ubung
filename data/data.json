@@ -1,0 +1,178 @@
+[
+    {
+        "question": "Die Katze sitzt ___ der Wand.",
+        "options": [
+            { "text": "На", "preposition": "an" },
+            { "text": "Под", "preposition": "unter" },
+            { "text": "Над", "preposition": "über" },
+            { "text": "Рядом", "preposition": "neben" }
+        ],
+        "answer": "an",
+        "explanation": "Wir benutzen 'an' (На), wenn etwas vertikal an einer Oberfläche hängt oder lehnt. Die Katze sitzt an der Wand, also 'an der Wand'."
+    },
+    {
+        "question": "Die Katze liegt ___ dem Tisch.",
+        "options": [
+            { "text": "На", "preposition": "auf" },
+            { "text": "Под", "preposition": "unter" },
+            { "text": "Перед", "preposition": "vor" },
+            { "text": "Позади", "preposition": "hinter" }
+        ],
+        "answer": "auf",
+        "explanation": "Wir benutzen 'auf' (На), wenn etwas auf der Oberfläche von etwas liegt. Die Katze liegt auf dem Tisch, also 'auf dem Tisch'."
+    },
+    {
+        "question": "Die Katze steht ___ dem Baum.",
+        "options": [
+            { "text": "За", "preposition": "hinter" },
+            { "text": "Перед", "preposition": "vor" },
+            { "text": "Рядом", "preposition": "neben" },
+            { "text": "Под", "preposition": "unter" }
+        ],
+        "answer": "hinter",
+        "explanation": "Wir benutzen 'hinter' (Позади / За), wenn sich etwas hinter einem anderen Objekt befindet. Die Katze steht hinter dem Baum, also 'hinter dem Baum'."
+    },
+    {
+        "question": "Die Katze ist ___ dem Kasten.",
+        "options": [
+            { "text": "Внутри", "preposition": "in" },
+            { "text": "На", "preposition": "auf" },
+            { "text": "Рядом", "preposition": "neben" },
+            { "text": "Перед", "preposition": "vor" }
+        ],
+        "answer": "in",
+        "explanation": "Wir benutzen 'in' (В), wenn sich etwas im Inneren eines anderen Objekts befindet. Die Katze ist in dem Kasten, also 'in dem Kasten'."
+    },
+    {
+        "question": "Die Katze sitzt ___ dem Fenster.",
+        "options": [
+            { "text": "У", "preposition": "neben" },
+            { "text": "На", "preposition": "auf" },
+            { "text": "За", "preposition": "hinter" },
+            { "text": "Под", "preposition": "unter" }
+        ],
+        "answer": "neben",
+        "explanation": "Wir benutzen 'neben' (Рядом), wenn sich etwas neben einem anderen Objekt befindet. Die Katze sitzt neben dem Fenster, also 'neben dem Fenster'."
+    },
+    {
+        "question": "Die Katze springt ___ das Seil.",
+        "options": [
+            { "text": "Над", "preposition": "über" },
+            { "text": "Под", "preposition": "unter" },
+            { "text": "Через", "preposition": "durch" },
+            { "text": "Мимо", "preposition": "um" }
+        ],
+        "answer": "über",
+        "explanation": "Wir benutzen 'über' (Над), wenn sich etwas über einem anderen Objekt befindet oder darüber hinweg bewegt. Die Katze springt über das Seil, also 'über das Seil'."
+    },
+    {
+        "question": "Die Katze liegt ___ dem Stuhl.",
+        "options": [
+            { "text": "Под", "preposition": "unter" },
+            { "text": "На", "preposition": "auf" },
+            { "text": "Рядом", "preposition": "neben" },
+            { "text": "Позади", "preposition": "hinter" }
+        ],
+        "answer": "unter",
+        "explanation": "Wir benutzen 'unter' (Под), wenn sich etwas unter einem anderen Objekt befindet. Die Katze liegt unter dem Stuhl, also 'unter dem Stuhl'."
+    },
+    {
+        "question": "Die Katze springt ___ den Sessel.",
+        "options": [
+            { "text": "Перед", "preposition": "vor" },
+            { "text": "За", "preposition": "hinter" },
+            { "text": "Рядом", "preposition": "neben" },
+            { "text": "Под", "preposition": "unter" }
+        ],
+        "answer": "vor",
+        "explanation": "Wir benutzen 'vor' (Перед), wenn sich etwas vor einem anderen Objekt befindet. Die Katze springt vor den Sessel, also 'vor den Sessel'."
+    },
+    {
+        "question": "Die Katze springt ___ die Torpfosten.",
+        "options": [
+            { "text": "Между", "preposition": "zwischen" },
+            { "text": "Через", "preposition": "durch" },
+            { "text": "Перед", "preposition": "vor" },
+            { "text": "Позади", "preposition": "hinter" }
+        ],
+        "answer": "zwischen",
+        "explanation": "Wir benutzen 'zwischen' (Между), wenn sich etwas zwischen zwei Objekten befindet. Die Katze springt zwischen die Torpfosten, also 'zwischen die Torpfosten'."
+    },
+    {
+        "question": "Die Katze kommt ___ dem Zimmer.",
+        "options": [
+            { "text": "Из", "preposition": "aus" },
+            { "text": "К", "preposition": "zu" },
+            { "text": "Через", "preposition": "durch" },
+            { "text": "Мимо", "preposition": "um" }
+        ],
+        "answer": "aus",
+        "explanation": "Wir benutzen 'aus' (Из), wenn sich etwas aus einem geschlossenen Raum bewegt. Die Katze kommt aus dem Zimmer, also 'aus dem Zimmer'."
+    },
+    {
+        "question": "Die Katze geht ___ den Tisch.",
+        "options": [
+            { "text": "К", "preposition": "zu" },
+            { "text": "От", "preposition": "von" },
+            { "text": "Через", "preposition": "durch" },
+            { "text": "Мимо", "preposition": "um" }
+        ],
+        "answer": "zu",
+        "explanation": "Wir benutzen 'zu' (К), wenn sich etwas in Richtung eines Objekts bewegt. Die Katze geht zum Tisch, also 'zu dem Tisch'."
+    },
+    {
+        "question": "Die Katze läuft ___ das Haus.",
+        "options": [
+            { "text": "Вокруг", "preposition": "um" },
+            { "text": "Через", "preposition": "durch" },
+            { "text": "Из", "preposition": "aus" },
+            { "text": "К", "preposition": "zu" }
+        ],
+        "answer": "um",
+        "explanation": "Wir benutzen 'um' (Вокруг), wenn sich etwas um ein Objekt bewegt. Die Katze läuft um das Haus, also 'um das Haus'."
+    },
+    {
+        "question": "Die Katze springt ___ den Korb.",
+        "options": [
+            { "text": "Через", "preposition": "durch" },
+            { "text": "Из", "preposition": "aus" },
+            { "text": "В", "preposition": "in" },
+            { "text": "На", "preposition": "auf" }
+        ],
+        "answer": "durch",
+        "explanation": "Wir benutzen 'durch' (Через), wenn sich etwas durch ein Loch oder einen Raum bewegt. Die Katze springt durch den Korb, also 'durch den Korb'."
+    },
+    {
+        "question": "Die Katze läuft ___ dem Baum.",
+        "options": [
+            { "text": "От... к", "preposition": "von... nach" },
+            { "text": "К", "preposition": "zu" },
+            { "text": "Через", "preposition": "durch" },
+            { "text": "Мимо", "preposition": "um" }
+        ],
+        "answer": "von... nach",
+        "explanation": "Wir benutzen 'von... nach' (От... к), wenn sich etwas von einem Ort zu einem anderen bewegt. Die Katze läuft von einem Baum zu einem anderen, also 'von dem Baum nach dem Baum'."
+    },
+    {
+        "question": "Die Katze springt ___ den Ball.",
+        "options": [
+            { "text": "Против", "preposition": "gegen" },
+            { "text": "К", "preposition": "zu" },
+            { "text": "Через", "preposition": "durch" },
+            { "text": "Мимо", "preposition": "um" }
+        ],
+        "answer": "gegen",
+        "explanation": "Wir benutzen 'gegen' (Против), wenn sich etwas mit einem Objekt kollidiert oder gegen es bewegt. Die Katze springt gegen den Ball, also 'gegen den Ball'."
+    },
+    {
+        "question": "Die Katze steht ___ dem Baum.",
+        "options": [
+            { "text": "Напротив", "preposition": "gegenüber" },
+            { "text": "Против", "preposition": "gegen" },
+            { "text": "Рядом", "preposition": "neben" },
+            { "text": "Позади", "preposition": "hinter" }
+        ],
+        "answer": "gegenüber",
+        "explanation": "Wir benutzen 'gegenüber' (Напротив), wenn sich etwas gegenüber einem anderen Objekt befindet. Die Katze steht gegenüber dem Baum, also 'gegenüber dem Baum'."
+    }
+]

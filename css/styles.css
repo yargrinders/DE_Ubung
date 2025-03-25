@@ -1,0 +1,106 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+}
+
+/* Общий стиль для контейнера */
+.link {
+    display: flex;
+    justify-content: center; /* Центрирование по горизонтали */
+    background-color: #f4f4f4; /* Светлый фон */
+    padding: 10px 0; /* Отступы сверху и снизу */
+}
+
+/* Стиль для списка */
+.link ul {
+    display: flex; /* Расположение элементов по горизонтали */
+    list-style: none; /* Убираем маркеры списка */
+    margin: 0;
+    padding: 0;
+}
+
+/* Стиль для каждого пункта списка */
+.link li {
+    margin: 0 15px; /* Отступы между ссылками */
+}
+
+/* Стиль для ссылок */
+.link a {
+    text-decoration: none; /* Убираем подчеркивание */
+    color: #333; /* Темный цвет текста */
+    font-family: Arial, sans-serif; /* Шрифт */
+    font-size: 16px; /* Размер шрифта */
+    padding: 8px 12px; /* Внутренние отступы */
+    border-radius: 5px; /* Закругленные углы */
+    transition: background-color 0.3s, color 0.3s; /* Плавный переход */
+}
+
+/* Эффект при наведении */
+.link a:hover {
+    background-color: #007BFF; /* Синий фон при наведении */
+    color: white; /* Белый текст */
+}
+#quiz-container {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.question {
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #fff;
+}
+.option {
+    display: block;
+    width: 100%;
+    margin: 5px 0;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #e0e0e0;
+    transition: background 0.3s, color 0.3s;
+}
+.option:hover {
+    background-color: #d0d0d0;
+}
+.selected {
+    background-color: #ff9800 !important;
+    color: white;
+}
+.correct {
+    background-color: #4CAF50 !important; /* Зеленый */
+    color: white;
+}
+.incorrect {
+    background-color: #F44336 !important; /* Красный */
+    color: white;
+}
+#submit-btn {
+    background-color: #007BFF;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background 0.3s;
+}
+#submit-btn:hover {
+    background-color: #0056b3;
+}
+#result {
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+

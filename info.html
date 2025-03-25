@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deutsche Präpositionen</title>
+    <link rel="stylesheet" href="css/info_style.css">
+</head>
+<body>
+    <h1>Deutsche Präpositionen</h1>
+    <div class="link">
+        <ul>
+            <li><a href="index.html">Übung</a></li>
+            <li><a href="info.html">Informationen</a></li>
+        </ul>
+    </div>
+    <div class="container" id="content"></div>
+    <img src="img/img_test.jpg" alt="Schulszene">
+
+    <script>
+        // Function to fetch and display data
+        async function loadData() {
+            try {
+                const response = await fetch('data/data.json');
+                const data = await response.json();
+                const container = document.getElementById('content');
+
+                data.forEach((item, index) => {
+                    const questionDiv = document.createElement('div');
+                    questionDiv.classList.add('question');
+
+                    // Question
+                    const questionText = `<p><strong>Frage ${index + 1}:</strong> ${item.question.replace(/___/, '<span style="color: red;">___</span>')}</p>`;
+                    questionDiv.innerHTML += questionText;
+
+                    // Correct Answer
+                    const answerText = `<p class="answer">Richtige Antwort: ${item.answer}</p>`;
+                    questionDiv.innerHTML += answerText;
+
+                    // Explanation
+                    const explanationText = `<p class="explanation">${item.explanation}</p>`;
+                    questionDiv.innerHTML += explanationText;
+
+                    container.appendChild(questionDiv);
+                });
+            } catch (error) {
+                console.error('Error loading the data:', error);
+            }
+        }
+
+        // Load data on page load
+        window.onload = loadData;
+    </script>
+</body>
+</html>
